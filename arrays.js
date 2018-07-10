@@ -1,5 +1,10 @@
-function addElementToBeginningOfArray() {
-  
+var arr = [];
+var element = 'foo';
+
+function addElementToBeginningOfArray(arr, element) {
+  return arr.unshift(element);
 }
 
-function 
+function destructivelyAddElementToBeginningOfArray(arr, element) {
+  return [element, ...arr];
+}
